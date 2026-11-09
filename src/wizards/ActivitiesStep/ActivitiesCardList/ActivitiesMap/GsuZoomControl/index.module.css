@@ -1,0 +1,36 @@
+.controlContainer {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 8px;
+    background-color: var(--color-default-background);
+    border-radius: 12px;
+    box-shadow: 0 2 12px var(--color-checkbox-shadow-hover);
+}
+
+.controlZoomOut,
+.controlZoomIn,
+.controlZoomOut > img,
+.controlZoomIn > img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (width <= 1024px) {
+    .controlZoomOut,
+    .controlZoomIn,
+    .controlZoomOut > img,
+    .controlZoomIn > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .controlContainer {
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,10 @@
+.toggleContainer {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+@media (width <= 1024px) {
+    .toggleContainer {
+        margin-bottom: 8px;
+    }
+}

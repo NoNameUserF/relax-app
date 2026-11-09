@@ -1,0 +1,49 @@
+import {FC} from "react";
+
+import {NavBarIconProps} from "@gsu-ai/gsu-ui-core/dist/types/types/globalTypes";
+
+import styles from "../index.module.css";
+
+const BooksIcon: FC<NavBarIconProps> = ({active}) => {
+    return (
+        <svg
+            className={active ? styles.active : styles.default}
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z"
+                stroke="#909090"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M5.83203 5.83331V14.1666"
+                stroke="#909090"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M9.16797 5.83331V14.1666"
+                stroke="#909090"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M12.5 5.83331L14.1667 14.1666"
+                stroke="#909090"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+        </svg>
+    );
+};
+
+export default BooksIcon;

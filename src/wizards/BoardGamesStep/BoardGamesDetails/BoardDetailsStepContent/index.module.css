@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.actionsBlock {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (width <=1024px) {
+    .container {
+        gap: 8px;
+    }
+    .desc {
+        font-size: 12px;
+    }
+}

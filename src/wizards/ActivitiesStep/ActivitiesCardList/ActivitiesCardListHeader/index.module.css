@@ -1,0 +1,43 @@
+.activitiesHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.activitiesDescription {
+    margin: 0;
+}
+
+.activitiesButtons {
+    display: flex;
+    align-items: center;
+}
+
+.activitiesRefreshDescription {
+    margin-left: 12px;
+    color: var(--color-main-text);
+}
+
+.activitiesHeaderRefresh {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-main-text);
+    border-radius: 8px;
+    max-height: 30px;
+    padding: 22px 20px;
+    justify-content: center;
+}
+
+@media (width <= 1024px) {
+    .activitiesButtons {
+        display: none;
+        width: 100%;
+    }
+
+    .activitiesHeader {
+        flex-direction: column;
+        row-gap: 10px;
+        margin-top: 10px;
+    }
+}

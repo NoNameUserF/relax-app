@@ -1,0 +1,67 @@
+.contentCardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contentCardContainer p {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-secondary-text);
+}
+
+.contentCardHeaderContainer > h6 {
+    line-height: 150%;
+    margin-bottom: 4px;
+}
+
+.contentCardHeaderContainer p {
+    color: var(--color-secondary);
+}
+
+.contentCardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contentCardContentIcons {
+    display: flex;
+    gap: 16px;
+}
+
+.contentCardContentItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.contentCardContentItem > p {
+    font-weight: 600;
+}
+
+.contentCardContentInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contentCardContentInfo span {
+    color: var(--color-main-text);
+}
+.contentCardContainer .contentCardContentDescription,
+.contentCardContainer .author {
+    color: var(--color-main-text);
+}
+
+@media (width <=1024px) {
+    .contentCardContainer {
+        gap: 12px;
+    }
+
+    .contentCardHeaderContainer > h6 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

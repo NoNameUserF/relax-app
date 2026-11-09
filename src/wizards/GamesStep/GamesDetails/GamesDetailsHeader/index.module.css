@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 16px;
+}
+
+@media (width <= 1024px) {
+    .header {
+        padding-bottom: 16px;
+    }
+}

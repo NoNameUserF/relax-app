@@ -1,0 +1,48 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.originTitle {
+    line-height: 24px;
+}
+
+.author {
+    color: var(--color-main-text);
+    line-height: 24px;
+}
+
+.description {
+    color: var(--color-main-text);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-secondary-text);
+    text-decoration: underline;
+    line-height: 24px;
+}
+
+.actionsBlock {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (width <=1024px) {
+    .table {
+        gap: 8px;
+    }
+
+    .originTitle {
+        font-size: 16px;
+    }
+}

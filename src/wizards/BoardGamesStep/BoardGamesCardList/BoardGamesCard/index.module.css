@@ -1,0 +1,10 @@
+.boardGameCardTitle {
+    line-height: 150%;
+}
+
+@media (width <=1024px) {
+  .boardGameCardTitle {
+      font-size: 14px;
+      line-height: 20px;
+  }
+}

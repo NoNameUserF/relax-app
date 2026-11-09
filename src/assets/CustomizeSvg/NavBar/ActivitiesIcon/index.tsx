@@ -1,0 +1,42 @@
+import {FC} from "react";
+
+import {NavBarIconProps} from "@gsu-ai/gsu-ui-core/dist/types/types/globalTypes";
+
+import styles from "../index.module.css";
+
+const ActivitiesIcon: FC<NavBarIconProps> = ({active}) => {
+    return (
+        <svg
+            className={active ? styles.active : styles.default}
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M9.99984 10.8334C10.4601 10.8334 10.8332 10.4603 10.8332 10C10.8332 9.53978 10.4601 9.16669 9.99984 9.16669C9.5396 9.16669 9.1665 9.53978 9.1665 10C9.1665 10.4603 9.5396 10.8334 9.99984 10.8334Z"
+                stroke="#909090"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M16.8335 16.8334C18.5335 15.1417 16.8502 10.7 13.0835 6.91669C9.30015 3.15003 4.85848 1.46669 3.16682 3.16669C1.46682 4.85836 3.15015 9.30003 6.91682 13.0834C10.7001 16.85 15.1418 18.5334 16.8335 16.8334Z"
+                stroke="#909090"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M13.0835 13.0834C16.8502 9.30003 18.5335 4.85836 16.8335 3.16669C15.1418 1.46669 10.7001 3.15003 6.91682 6.91669C3.15015 10.7 1.46682 15.1417 3.16682 16.8334C4.85848 18.5334 9.30015 16.85 13.0835 13.0834Z"
+                stroke="#909090"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+        </svg>
+    );
+};
+
+export default ActivitiesIcon;

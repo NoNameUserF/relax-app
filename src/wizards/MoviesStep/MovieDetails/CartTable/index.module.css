@@ -1,0 +1,23 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cardButtons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.infoGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+@media (width <=1024px) {
+    .infoGroup {
+        gap: 8px;
+    }
+}
